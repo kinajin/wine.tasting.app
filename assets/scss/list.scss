@@ -1,0 +1,86 @@
+@import "_reset";
+@import "_base";
+
+body {
+  @include flex_column_center;
+}
+
+input {
+  @include input;
+  position: fixed;
+  margin-top: 28vw;
+}
+
+.search_bar_background {
+  position: fixed;
+  width: 100vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.status_bar {
+  @include status_bar;
+}
+
+.list_title {
+  @include list_title;
+  margin-top: 45vw;
+}
+
+.wine_list {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 5vw 0;
+  border-bottom: 1px solid lightgray;
+
+  .wine_info {
+    display: flex;
+
+    .wine_list_image {
+      width: 14vw;
+      height: 18vw;
+      object-fit: cover;
+      border-radius: 3vw;
+      margin-right: 2vw;
+    }
+
+    .wine_info_detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        padding: 1vw 1vw;
+        color: gray;
+      }
+      .wine_name {
+        font-weight: 700;
+        font-size: 3.2vw;
+        color: black;
+      }
+    }
+  }
+
+  .wine_evaluate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .wine_evaluate_stars {
+      color: #ffc72d;
+    }
+
+    i.fa-star:nth-of-type(5n) {
+      color: lightgray;
+    }
+
+    span {
+      padding: 1vw;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add_wine</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/03b0de77fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="status_bar">
+      <i
+        class="fa-solid fa-arrow-left fa-xl"
+        onclick="location.href='list.html'"
+      ></i>
+      <i class="fa-solid fa-question fa-xl"></i>
+    </nav>
+
+    <div class="status_bar_blank"></div>
+
+    <div class="list_title">
+      <div class="square"></div>
+      <span class="title">와인 정보</span>
+    </div>
+
+    <input type="text" id="wine_name" placeholder="와인 이름" />
+    <input type="text" id="Vintage" placeholder="빈티지" />
+    <input type="text" id="Alcohol" placeholder="도수" />
+    <input type="text" id="Area" placeholder="산지(Ex. 프랑스 보르도 쏘테른)" />
+    <input type="text" id="Grape?" placeholder="포도 품종" />
+
+    <div class="list_title">
+      <div class="square"></div>
+      <span class="title">외관</span>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">선명도</span>
+
+      <div class="option_content">
+        <button class="option">맑은</button>
+        <button class="option">탁한</button>
+        <button class="option">깊은</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">강도</span>
+
+      <div class="option_content">
+        <button class="option">연함</button>
+        <button class="option">중간</button>
+        <button class="option">깊은</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">색</span>
+
+      <div class="option_content">
+        <span class="small_small_title"> 화이트와인 </span>
+
+        <button class="option">레몬 초록</button>
+        <button class="option">금색</button>
+        <button class="option">호박색</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 로제 </span>
+
+        <button class="option">핑크</button>
+        <button class="option">연어색</button>
+        <button class="option">주황색</button>
+      </div>
+      <div class="option_content">
+        <span class="small_small_title"> 레드와인 </span>
+
+        <button class="option">자주</button>
+        <button class="option">루비</button>
+        <button class="option">가넷</button>
+        <button class="option">황갈색</button>
+        <button class="option">갈색</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">기타 관찰 사항</span>
+
+      <div class="option_content">
+        <button class="option">다리/눈물</button>
+        <button class="option">침전물</button>
+        <button class="option">거품</button>
+        <button class="option">기포</button>
+      </div>
+    </div>
+
+    <div class="list_title">
+      <div class="square"></div>
+      <span class="title">후각</span>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">상태</span>
+
+      <div class="option_content">
+        <button class="option">깨끗한</button>
+        <button class="option">깨끗하지 않은 (결함?)</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">강도</span>
+
+      <div class="option_content">
+        <button class="option">가벼운</button>
+        <button class="option">중간(-)</button>
+        <button class="option">중간</button>
+        <button class="option">중간(+)</button>
+        <button class="option">강렬한</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">향 특성</span>
+
+      <div class="option_content">
+        <button class="option">1차향</button>
+        <button class="option">2차향</button>
+        <button class="option">3차향</button>
+      </div>
+
+      <div class="option_content"></div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">1차향</span>
+
+      <div class="option_content">
+        <span class="small_small_title"> 꽃 </span>
+
+        <button class="option">아카시아</button>
+        <button class="option">허니서클</button>
+        <button class="option">캐모마일</button>
+        <button class="option">딱총나무</button>
+        <button class="option">꽃</button>
+        <button class="option">제라늄</button>
+        <button class="option">갓 피어난 꽃</button>
+        <button class="option">장미</button>
+        <button class="option">제비꽃</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 초록 과일 </span>
+
+        <button class="option">사과</button>
+        <button class="option">구스베리</button>
+        <button class="option">페어드롭</button>
+        <button class="option">모과</button>
+        <button class="option">포도</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 감귤류 과일 </span>
+
+        <button class="option">자몽</button>
+        <button class="option">레몬</button>
+        <button class="option">라임(즙 또는 껍질?)</button>
+        <button class="option">오렌지 껍질</button>
+        <button class="option">레몬 껍질</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 핵과류 </span>
+
+        <button class="option">복숭아</button>
+        <button class="option">살구</button>
+        <button class="option">천도 복숭아</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 열대 과일 </span>
+
+        <button class="option">바나나</button>
+        <button class="option">리치</button>
+        <button class="option">망고</button>
+        <button class="option">멜론</button>
+        <button class="option">패션 푸르트</button>
+        <button class="option">파인애플</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 붉은 과일 </span>
+
+        <button class="option">레드커런트</button>
+        <button class="option">크랜베리</button>
+        <button class="option">라즈베리</button>
+        <button class="option">딸기</button>
+        <button class="option">레드 체리</button>
+        <button class="option">붉은 자두</button>
+      </div>
+
+      <div class="option_content">
+        <span class="small_small_title"> 검은 과일 </span>
+
+        <button class="option">블 커런트</button>
+        <button class="option">블랙베리</button>
+        <button class="option">검은 딸기</button>
+        <button class="option">블루베리</button>
+        <button class="option">블랙체리</button>
+        <button class="option">검은 자두</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">발전</span>
+
+      <div class="option_content">
+        <button class="option">어린</button>
+        <button class="option">숙성중</button>
+        <button class="option">완전히 숙성</button>
+        <button class="option">때가 지난/전성기 지난</button>
+      </div>
+    </div>
+
+    <div class="list_title">
+      <div class="square"></div>
+      <span class="title">미각</span>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">당도</span>
+
+      <div class="option_content">
+        <button class="option">드라이</button>
+        <button class="option">오프드라이</button>
+        <button class="option">중간드라이</button>
+        <button class="option">중간스위트</button>
+        <button class="option">스위트</button>
+        <button class="option">매우스위트</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">산도</span>
+
+      <div class="option_content">
+        <button class="option">낮음</button>
+        <button class="option">중간(-)</button>
+        <button class="option">중간</button>
+        <button class="option">중간(+)</button>
+        <button class="option">높은</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">탄닌</span>
+
+      <div class="option_content">
+        <button class="option">낮음</button>
+        <button class="option">중간(-)</button>
+        <button class="option">중간</button>
+        <button class="option">중간(+)</button>
+        <button class="option">높은</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">알코올</span>
+
+      <div class="option_content">
+        <button class="option">낮음</button>
+        <button class="option">중간</button>
+        <button class="option">높은</button>
+      </div>
+      <div class="option_content">
+        <span class="small_small_title"> 주정강화와인 </span>
+        <button class="option">낮음</button>
+        <button class="option">중간</button>
+        <button class="option">높은</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">바디</span>
+
+      <div class="option_content">
+        <button class="option">가벼운</button>
+        <button class="option">중간(-)</button>
+        <button class="option">중간</button>
+        <button class="option">중간(+)</button>
+        <button class="option">무거운</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">거품</span>
+
+      <div class="option_content">
+        <button class="option">섬세</button>
+        <button class="option">크림 같은</button>
+        <button class="option">공격적인</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">풍미강도</span>
+
+      <div class="option_content">
+        <button class="option">가벼운</button>
+        <button class="option">중간(-)</button>
+        <button class="option">중간</button>
+        <button class="option">중간(+)</button>
+        <button class="option">강렬한</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">여운</span>
+
+      <div class="option_content">
+        <button class="option">짧은</button>
+        <button class="option">중간(-)</button>
+        <button class="option">중간</button>
+        <button class="option">중간(+)</button>
+        <button class="option">긴</button>
+      </div>
+    </div>
+
+    <div class="list_title">
+      <div class="square"></div>
+      <span class="title">결론</span>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">품질수준</span>
+
+      <div class="option_content">
+        <button class="option">결함 있음</button>
+        <button class="option">다소 결점이 있는</button>
+        <button class="option">그런대로 괜찮은</button>
+        <button class="option">좋은</button>
+        <button class="option">매우 좋은</button>
+        <button class="option">뛰어난</button>
+      </div>
+    </div>
+
+    <div class="option_list">
+      <span class="small_title">마시기 적합한 시기/숙성 가능성</span>
+
+      <div class="option_content">
+        <button class="option">너무 어린</button>
+        <button class="option">지금 마실수 있지만, 숙성 잠재력 있음</button>
+        <button class="option">
+          지금 마시기 좋은: 숙성 또는 추가 숙성에 부적합
+        </button>
+        <button class="option">너무 오래된</button>
+      </div>
+    </div>
+
+    <div class="warning">
+      <img
+        src="https://www.pngmart.com/files/17/Caution-Warning-PNG-Photos.png"
+        alt="warning"
+      />
+      <br />
+      <span>화면이 작을때 작동이 잘됩니다!</span>
+    </div>
+  </body>
+</html>

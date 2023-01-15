@@ -1,0 +1,104 @@
+@import "_reset";
+@import "_base";
+
+// [abstracts]
+
+// variables
+// functions
+// mixins
+// placeholders
+
+// [base]
+
+// reset
+// typo
+
+// [components]
+// buttons
+// dropdown
+
+// [layout]
+// navigation
+// grid
+// header
+// footer
+// forms
+
+// [pages]
+
+// home
+// contact
+
+// [theme]
+
+//variables
+
+//size
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  main {
+    .splash_title {
+      font-family: "Inter", sans-serif;
+      font-weight: 900;
+      line-height: 13vw;
+      font-size: 15vw;
+      margin-left: 1vw;
+      animation: wiggle 2s ease-in-out infinite;
+    }
+
+    /* Keyframes */
+    @keyframes wiggle {
+      0%,
+      7% {
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-7deg);
+      }
+      20% {
+        transform: rotateZ(7deg);
+      }
+      25% {
+        transform: rotateZ(-3deg);
+      }
+      30% {
+        transform: rotateZ(3deg);
+      }
+      35% {
+        transform: rotateZ(-1deg);
+      }
+      40%,
+      100% {
+        transform: rotateZ(0);
+      }
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: 500;
+      margin-top: 20vw;
+      font-size: 3vw;
+    }
+
+    .login_btn {
+      width: 45vw;
+      height: 10vw;
+      margin-top: 5vw;
+      border-radius: 1em;
+      border: 0 solid;
+      background: $wine-gradient;
+      filter: drop-shadow(0 7mm 1rem rgba(0, 0, 0, 0.2));
+    }
+
+    img {
+      width: 5vw;
+      filter: $black-to-white;
+    }
+  }
+}

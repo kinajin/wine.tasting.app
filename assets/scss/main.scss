@@ -1,0 +1,41 @@
+@import "_reset";
+@import "_base";
+
+body {
+  @include flex_column_center;
+}
+
+.status_bar {
+  @include status_bar;
+}
+
+.status_bar_blank {
+  @include status_bar_blank;
+}
+
+.list_title {
+  @include list_title;
+}
+
+input {
+  @include input;
+}
+
+.option_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+
+  .small_title {
+    @include small_title;
+  }
+
+  .small_small_title {
+    @include small_small_title;
+  }
+
+  .option {
+    @include option;
+  }
+}
