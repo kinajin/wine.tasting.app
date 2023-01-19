@@ -163,6 +163,10 @@ table {
   }
 }
 
+span {
+  font-family: inherit;
+}
+
 body {
   display: flex;
   flex-direction: column;

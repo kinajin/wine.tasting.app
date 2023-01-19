@@ -7,8 +7,16 @@ $font-default: "Roboto", sans-serif;
 //color
 $wine-gradient: linear-gradient(to bottom right, #ff5061, #ffc16a);
 
-//shadow
+//shadow for splash
+
 $shadow: drop-shadow(0 7mm 1rem rgba(0, 0, 0, 0.2));
+
+//shadow for input
+
+$shadow_input: box-shadow(
+  rgba(0, 0, 0, 0.12) 0px 1px 3px,
+  rgba(0, 0, 0, 0.24) 0px 1px 2px
+);
 
 //the filter turn svg color black to white
 $black-to-white: invert(100%) sepia(80%) saturate(22%) hue-rotate(61deg)
@@ -52,7 +60,7 @@ $black-to-white: invert(100%) sepia(80%) saturate(22%) hue-rotate(61deg)
   margin: 2vw 0;
   padding-left: 5vw;
   padding-top: 1vw;
-  filter: $shadow;
+  filter: $shadow_input;
 
   &::placeholder {
     font-family: inherit;
