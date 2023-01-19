@@ -132,3 +132,8 @@ $black-to-white: invert(100%) sepia(80%) saturate(22%) hue-rotate(61deg)
     display: none;
   }
 }
+
+//font for span
+span {
+  font-family: inherit;
+}
