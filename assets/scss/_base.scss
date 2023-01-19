@@ -145,3 +145,15 @@ $black-to-white: invert(100%) sepia(80%) saturate(22%) hue-rotate(61deg)
 span {
   font-family: inherit;
 }
+
+// base guide button click
+
+button:hover {
+  background-color: #ff5061;
+  color: #f7f7f7;
+}
+
+button:focus {
+  background-color: #ffc16a;
+  color: black;
+}

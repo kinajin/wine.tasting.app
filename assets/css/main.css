@@ -167,6 +167,16 @@ span {
   font-family: inherit;
 }
 
+button:hover {
+  background-color: #ff5061;
+  color: #f7f7f7;
+}
+
+button:focus {
+  background-color: #ffc16a;
+  color: black;
+}
+
 body {
   display: flex;
   flex-direction: column;

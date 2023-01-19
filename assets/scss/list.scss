@@ -74,8 +74,24 @@ input {
       color: #ffc72d;
     }
 
-    i.fa-star:nth-of-type(5n) {
-      color: lightgray;
+    // perfecgt 5 verygood 4 normal 3 verybad 2
+
+    .very_good {
+      i:nth-of-type(5) {
+        color: lightgray;
+      }
+    }
+
+    .normal {
+      i:nth-of-type(n + 4) {
+        color: lightgray;
+      }
+    }
+
+    .very_bad {
+      i:nth-of-type(n + 3) {
+        color: lightgray;
+      }
     }
 
     span {

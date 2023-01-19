@@ -167,6 +167,16 @@ span {
   font-family: inherit;
 }
 
+button:hover {
+  background-color: #ff5061;
+  color: #f7f7f7;
+}
+
+button:focus {
+  background-color: #ffc16a;
+  color: black;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -283,7 +293,15 @@ input::placeholder {
   color: #ffc72d;
 }
 
-.wine_list .wine_evaluate i.fa-star:nth-of-type(5n) {
+.wine_list .wine_evaluate .very_good i:nth-of-type(5) {
+  color: lightgray;
+}
+
+.wine_list .wine_evaluate .normal i:nth-of-type(n + 4) {
+  color: lightgray;
+}
+
+.wine_list .wine_evaluate .very_bad i:nth-of-type(n + 3) {
   color: lightgray;
 }
 
